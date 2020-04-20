@@ -144,4 +144,4 @@ fi
 
 o=`wc -l /tmp/exercise_output.txt`
 
-echo "You have this many fails:" 
+echo "You have this many fails:" $o
