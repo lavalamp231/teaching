@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -f /tmp/exercise_output.txt
+
 # disk check 
 
 if [ -b /dev/sdb1 ]
