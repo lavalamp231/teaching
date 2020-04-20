@@ -126,6 +126,15 @@ else
 	echo "/exercise/test.txt does not exist - you fail!" >> /tmp/exercise_output.txt
 fi
 
+if /exercise/test.txt |awk '{print $3}'| grep Andrew
+then
+	echo "/exercise/test.txt Ownership is Andrew"
+else
+	echo "/exercise/test.txt Ownership is not Andrew - You fail!"
+	echo "/exercise/test.txt Ownership is not Andrew" >> /tmp/exercise_output.txt
+fi
+
+
 if systemctl status nfs-server | grep  'disabled;'
 then
 	echo "nfs-server is enabled"
