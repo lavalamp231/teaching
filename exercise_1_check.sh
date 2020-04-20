@@ -40,6 +40,13 @@ else
 	echo "/exercise permissions are not good - You fail!"
 fi
 
+if df -Th | grep exercise | grep xfs
+then
+	echo "/exercise has the XFS filesystem"
+else
+	echo "/exercise does has the XFS filesystem - You fail!"
+fi
+
 # User check
 
 if id Andrew | grep -q -i  Andrews_Group
