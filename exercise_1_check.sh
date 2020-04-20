@@ -12,12 +12,12 @@ else
 	echo "/dev/sdb1 doesn't exist - you fail!" >> /tmp/exercise_output.txt
 fi
 
-if [ -b /dev/sdb2 ]
+if [ -b /dev/sdc1 ]
 then
-	echo "/dev/sdb2 exists"
+	echo "/dev/sdc1 exists"
 else
-	echo "/dev/sdb2 doesn't exist - you fail!"
-	echo "/dev/sdb2 doesn't exist - you fail!" >> /tmp/exercise_output.txt
+	echo "/dev/sdc1 doesn't exist - you fail!"
+	echo "/dev/sdc1 doesn't exist - you fail!" >> /tmp/exercise_output.txt
 fi
 
 
