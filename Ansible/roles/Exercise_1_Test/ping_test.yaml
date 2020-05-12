@@ -1,0 +1,6 @@
+-
+  name: Check connectivity to target servers
+  hosts: Puppet_Servers
+  tasks:
+    - name: Ping test
+      ping: 

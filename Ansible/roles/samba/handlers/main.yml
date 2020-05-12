@@ -1,0 +1,11 @@
+---
+# handlers file for samba
+# https://hooks.slack.com/services/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
+- name: restart samba
+  service: name=smb state=restarted
+
+- name: slack samba restarted
+  slack:
+    domain: home-developmentgroup.slack.com
+    token:  "TH60BELBA/B0137S1UL9L/mV4EB7fZt9sei3eYHpFqZqqh"
+    msg: "Samba was restarted by ansible"
