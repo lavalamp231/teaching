@@ -1,0 +1,7 @@
+---
+# defaults file for samba
+users:
+  user1: Andrew
+  user2: Tra
+  user3: Milton
+  
