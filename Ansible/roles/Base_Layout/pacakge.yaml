@@ -1,8 +1,0 @@
--
-  name: Install base packages for centos
-  hosts: TEST
-  tasks:
-    - name: Install packages
-      package:
-        name: "{{ PACKAGES }}"
-        state: present

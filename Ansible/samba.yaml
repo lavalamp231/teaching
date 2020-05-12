@@ -1,4 +1,0 @@
----
-- hosts: TEST
-  roles:
-    - samba
