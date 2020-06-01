@@ -4,7 +4,7 @@ echo "install puppet repo"
 
 rpm -Uvh https://yum.puppet.com/puppet6-release-el-7.noarch.rpm
 
-yum install puppet -t
+yum install puppet -y
 
 exec bash
 
